@@ -11,7 +11,6 @@ Itt az ember kölcsönhatásairól a virtuális valóságban, gépi tanulásról
 > Kiadó neve, kiadás éve, oldalszám: Cambridge University Press, 2016, 418 oldal
 
 ## Kölcsönhatások a virtuális valóságbam
-----------------------------------------
 
 Az ember és a virtuális tér kapcsolatán az alábbi kérdések merülhetnek fel:
 - Hogyan
@@ -32,3 +31,10 @@ Az univerzális szimulációs elv nem feltétlenül realizmus. Gyakran jobb az i
 
 Fontos fogalmak:
 - remapping (a való világban való mozgás leképezése egy lényegesen eltérő mozgásra a virtuális világban.)
+
+Fontos feladataink a virtuális valóság használatához:
+- Felhasználó számára a működés, mozgás:
+    - könnyen megtanulható
+    - használható
+    - kényelmes
+    - hatékony feladathoz
