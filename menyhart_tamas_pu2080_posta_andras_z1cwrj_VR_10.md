@@ -20,7 +20,7 @@ Az ember és a virtuális tér kapcsolatán az alábbi kérdések merülhetnek f
   - viszonyulnak más entitásokhoz?
   - működjenek együtt a fájlokkal vagy az internettel?
 
-<u>Univerzális szimulációs elv:</u> A valós világ bármely mechanizmusa szimulálható VR-ben.
+> **<u>Univerzális szimulációs elv:</u>** A valós világ bármely mechanizmusa szimulálható VR-ben.
 
 Példák:
 - A felhasználó
@@ -82,4 +82,22 @@ A **kisagy** egy feldolgozó egység, ami:
     - új motoros képességek tanulása
 - felhasználása a VR számára a szenzomotoros kapcsolatok tanulása (pl.: szem kéz koordináció).
 
-sss
+![Kép az Atari breakout játékról](./media/kep2.png)
+
+(a) Atari 2600 lapátvezérlő.
+
+(b) Az Atari Breakout játék, amelyben az alsó vonal szegmense egy virtuális lapát, amely lehetővé teszi a labda pattogását, cél, hogy a labda minden téglának nekiütközzön, ezáltal a téglák megszűnnek.
+
+
+A motorvezérlő jelek és a szenzoros és észlelési jelek közötti szoros kapcsolat kialakítása kulcsfontosságú számos feladatnál. Ezek a mérnöki területen is széles körben ismert rendszerek, amelyekben az érzékelő-visszacsatolás és a motorvezérlés egyesítik az alkalmazásokban mint például a robotika és a repülőgépek stabilizálása; az ezzel foglalkozó entitás az ún. vezérlőrendszerek. Köztudott, hogy a zárt hurkú rendszert részesítik előnyben, amelyben
+az érzékelő információi visszacsatolást adnak a végrehajtás során, szemben a nyílt hurokkal, amely a motorjeleket az idő függvényében adja meg.
+
+Fontos szempont, hogy egy motoros képesség megtanulása mennyi időt vesz igénybe. Ez személyenként eltérő, de van egy várható értéke, ami megfelel a valóságnak (pl.: egér mozgását mindenki hamarabb megtanulja, mint a vakon gépelést a billentyűzeten).
+
+> **Neuroplaszticitás**: az agy azon képessége, hogy átszervezze idegi struktúráit
+és új utakat (idegi pályákat) alakítanak ki az új ingerekhez való alkalmazkodáshoz. Kisgyermekkorban szinaptikus metszés a mértéke a legnagyobb, ami az idő folyamán exponenciálisan csökken (ezért fontos gyerekkorban a tanulás pl.: egy kisgyerek rövid idő alatt képes megtanulni egy egész nyelvet is, ami egy felnőttnek már nehezése esik). Emiatt az egészséges felnőtteknél körülbelül feleannyi szinapszis van neurononként, mint egy két vagy három éves gyermeknek. Viszont a csökkenés mértéke az agy mentális tornáztatásával jelentősen csökkenthető, így megelőzhetőek olyan időskori betegségek, mint a demencia.
+
+> **Motoros képességek tanulása**: legyen egy egyszerű,- klasszikus példa a Breakout videojáték, amit az Atari fejlesztett ki 1976-ban. A játékos elforgatja a gombot, amely az (a) ábrán látható. Ez a képernyő alján lévő vonalszakasz vízszintes elmozdulását okozza. A lapát egy potenciométert tartalmaz, amely kalibrálással lehetővé teszi a gomb orientációjának megbízható becslését. A játékos látja a vonalszakaszt a képernyő alján, és gyorsan társítja a gombok tájolását. A tanulási folyamat tehát magában foglalja a vizuális észlelést, a
+propriocepciós jeleket a gomb elforgatásából és a szenzomotor meghatározását.
+
+![kép a virtuális egérről](./media/kep3.png)
