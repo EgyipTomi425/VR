@@ -29,8 +29,7 @@ Példák:
 
 Az univerzális szimulációs elv nem feltétlenül realizmus. Gyakran jobb az interakció jobbá tétele mint a valóság. Ezért ez a fejezet olyan interakciós mechanizmusokat mutat be, amelyek esetleg nincs megfelelője a fizikai világban. Az 1. szakasz bemutatja az általános gépi tanulási és szabályozási fogalmakat.
 
-Fontos fogalmak:
-- remapping (a való világban való mozgás leképezése egy lényegesen eltérő mozgásra a virtuális világban.)
+> **remapping**: a való világban való mozgás leképezése egy lényegesen eltérő mozgásra a virtuális világban.
 
 Fontos feladataink a virtuális valóság használatához:
 - Felhasználó számára a működés, mozgás:
@@ -38,3 +37,26 @@ Fontos feladataink a virtuális valóság használatához:
     - használható
     - kényelmes
     - hatékony feladathoz
+- Felhasználó számára mozgás megvalósítása a virtuális térben úgy, hogy a valóságban marad.
+- A térrel (pl.: tárgyakkal) való interakciók, manipulációk leírása
+- A felhasználók egymás közötti interakcióinak, kommunikációjának megoldása
+
+### 1. Motor programok és remapping
+-------------------------------
+
+> **Motor program**: Életünk során fejlesztjük finommotorikus készségeinket számos konkrét feladat elvégzéséhez, mint például szövegírás, cipőfűző kötözés, labdadobás, és biciklizés. Ezeket gyakran motoros programoknak (gépi tanulásnak) nevezik, és megtanulják ismétlődő próbák révén, a pontosság és a könnyűség fokozatos javulásával, ahogy az elvégzett gyakorlatok száma nő. Végül előállítjuk a mozgásokat anélkül, hogy figyelni is kelljen rájuk. Például a legtöbb ember tud autót vezetni figyelmen kívül hagyva a kormánykerék, a fékek bizonyos műveleteit.
+
+Ezzel a módszerrel mi is megtanultuk pl.: kezelni a számítógépen található interfészt. Próbálkozásokon keresztül az egér hasznalatát könnyen- és hamar el lehet sajátítani, míg a billentyűzeten való vakon gépelés megtanulása akár évekig tarthat.
+
+
+Tervezési szempontok A VR interakciós mechanizmusainak fejlesztése során:
+1. Magas hatékonyság elérése a 
+    - feladat elvégzésének gyorsaságában
+    - pontosságában
+    - mozgási tartomány meghatározásában (opcionális)
+2. Az új motoros programok elsajátításának nehézségei
+    - ideális esetben a felhasználónak nem kellene sok hónapot tölteni egy új mechanizmus elsajátításával.
+3. Könnyű használhatóság a kognitív terhelés szempontjából
+    - az interakciós mechanizmusnak kevés vagy egyáltalán nem kell koncentrált figyelmet igényelnie némi gyakorlás után.
+4. Általános kényelem hosszabb ideig tartó használat során
+    - Ne alakuljon ki izomfáradtság, hacsak nem valamilyen fizikai gyakorlat a feladat.
