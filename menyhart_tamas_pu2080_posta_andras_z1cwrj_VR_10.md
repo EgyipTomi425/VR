@@ -60,3 +60,11 @@ Tervezési szempontok A VR interakciós mechanizmusainak fejlesztése során:
     - az interakciós mechanizmusnak kevés vagy egyáltalán nem kell koncentrált figyelmet igényelnie némi gyakorlás után.
 4. Általános kényelem hosszabb ideig tartó használat során
     - Ne alakuljon ki izomfáradtság, hacsak nem valamilyen fizikai gyakorlat a feladat.
+
+Az agy a mozgás megvalósításához elektromos inpulzusokat küld az izmokba, ezáltal mozgásra kényszerítve őket.
+
+![kép az agyról](./media/kep1.png)
+
+(a) Az agykéreg egy része a mozgásnak van szentelve.
+
+(b) Sok más részek kölcsönhatásba lépnek a kéreggel, hogy mozgásokat hozzanak létre és hajtsanak végre, beleértve a talamusz, a gerincvelő, a bazális ganglion, az agytörzs és a kisagy.
