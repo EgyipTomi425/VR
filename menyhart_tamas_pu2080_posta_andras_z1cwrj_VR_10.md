@@ -110,3 +110,43 @@ propriocepciós jeleket a gomb elforgatásából és a szenzomotor meghatározá
 
 > **Kapcsolatok és a fizika törvényei**: Egy ügyes játékos gyorsan tudja elforgatni az egeret, így a kéz egy kicsi mozgatásával nagy távolságot tud pontosan meghatározni. Például: ha valaki egy mesterlövész puskával a CS:GO nevű játékot játsza, akkor amikor a másodperc tört része alatt megfordul, és fejbelő, akkor az oroszul való káromkodás után elemezhetjük ezt az eseményt. Tehát, a játékos a kezét minimálisan mozgatta, viszont egy egész emberi test képes volt megfordulni, nagy távolságot megtenni. Gyakori eset, hogy a virtuális tér sokkal jobb teljesítményt tud nyújtani, mint a valóság, mert ott nem (feltétlenül) érvényesek a fizika törvényei. Pl.: Amikor el kezdtünk megfordulni a karakterünkkel t=n idő alatt, ahol lim n -> 0, akkor v=0 m/s sebességből lett v=sok m/s, akkor ha felírjuk a gyorsulást, hogy a=Δv/Δt (sebességváltozás/eltelt idő, ahol az eltelt időt kis időegységre kell nézni, így kicsi az időegységre eső sebességváltozás is) akkor ez a Δt=t(összes) olyan kicsi, hogy nem mérhető, így sok/+0 0-val kellene osztani (ami nem nulla, csak elhanyagolhatóan kicsi), tehát végtelen gyorsulással kezdett el fordulni a karakterünk, ami a valóságban lehetetlen. További probléma, hogy a tehetetlenség törvénye (Newton I.) miatt 1/2 * m * v^2 energiát adtunk a karunknak és a puskának t=n lim n-> 0, ami szintén lehetetlen.  Ugyanígy, végtelen gyorsulással állt meg a játékos karaktere (fordul a karakter, és amikor eléri a másik játékos fejét azonnal megáll). Itt ezen kívül olyan problémák is előfordulnak mint hogy a karunknak és a puskának is van tömege, így érvényes rá a lendületmegmaradás törvénye (Newton II.) is. De sorolhatnék még például olyat, hogy a kezéből a puska távcsövét azonnal a szeméhez rakta egy kattintással. Mivel ezek nincsenek jelen a játéban, így a játékosnak csak az ügyessége és a reflexei számítanak (meg az inputlag nagysága (ping), de ezt most hagyjuk ki).
 
+------------------------------------------------------
+
+> **Motoros képességek a VR-hoz**: Az észlelési élményt a test mozgása irányítja, ami hardvereszközön keresztül érzékelt; az univerzális szimulációs elvet alkalmazva, ami be kerül magába a programba. A fizikai interakcióhoz használt eszköz lehet egy tényleges eszköz, pl.: egy igazi Atari Paddle vagy egy hasonló élményt nyújtó szimulációs eszköz. A fej nyomon követésének esetén elengedhetetlen a nézőpont nagy pontosságú precíz fenntartása és nulla effektív késleltetés; ellenkező esetben a VR élmény jelentősen leromlik. Ez elengedhetetlen, mert a stacionaritás érzékelését fenn kell tartani, ami a hitelesség és a kényelem.
+
+----------------------------------------
+
+> **Remapping**: Más testrészek mozgásainál ez a tökéletes illeszkedés nem
+kritikus fontosságú. Ehelyett az idegrendszerünk megtanulhat olyan asszociációkat, amelyek előnyösebbek kényelem szempontjából, ugyanúgy, mint az Atari Paddle, az egér és a billentyűzet a való világban. Így újratérképezést szeretnénk végezni, ami magában foglalja a tanulást a szenzomotoros leképezésben, amely más eredményeket produkál egy virtuális világban, mint ahogy elvárnánk a való világtól. A fenti billentyűzet példa az egyik leggyakoribb példa az újratérképezésre. Az a folyamat, amikor egy ceruzát átnyomunk a papíron, hogy
+előállítsunk egy betűt, az egy gomb megnyomásával helyettesíthető. Az újratérképezés kifejezés egy valós világban történő eseményt (pl.: billentyűleütést) alakít át virtuális téren belüli eseménnyé (pl.: itt kilyukasztottuk a virtuális papírt vagy kinyithatunk egy ajtót). Itt is be lehet állítani, hogy pl.: 1 centiméteres mozgás a valóságban 10 centiméternek feleljen meg a VR világában.
+
+--------------------------------------------------
+
+### 2. Mozgás
+---------------
+
+A Virtuális világ általában nagyobb felületet fed le, mint a valós világban a mozgásterünk. Ebben az esetben valamilyen interakciós mechanizmusra van szükség, ami mozgatja a felhasználót a virtuális világban, miközben a követett területen belül marad a való világban. 
+
+Rendelkezésre álló hely függvényében a lekövetések az alábbiak lehetnek:
+- Natív, amikor a felhasználó a szabadban sétál egy headsettel a fején
+  - A valós térbeli mozgás leírása megegyezik a virtuális térben leírtakkal
+  - Ez adja a leghihetőbb felhasználói élményt
+- Félpasszív, amikor a felhasználó a headsettel a fején ül, mozgását lekövetik
+  - Ilyenkor nyomon követik, hogy az illető éppen milyen irányba néz
+  - Ha forgószék van az illetőnek, akkor a törzs mozgását is szimulálhatják vele (lengési irány)
+  - Itt használhat kontrollert, billentyűzetet stb. és pl.: kiváltja a fejével az egér mozgását
+    - Egy példa, amikor a TheVR Outlastot játszott Oculus Rift segítségével
+- Passzív, amikor még a fej mozgását se követik le, de a headset az illető fején van.
+  - Gyakori például lövöldözés játékoknál.
+
+TheVR Pisti Outlastot játszik Oculus Rift segítségével. (Ez nem lövöldözős játék.) Amerre éppen elnéz, abba az irányba néz a karaktere, így nincs szüksége egérre (vagy csak minimálisan).
+
+![TheVR Pisti](./media/kep5.png)
+
+###### Forrás: https://www.youtube.com/watch?v=0vuJQjvjzmo&list=PLYbu5a2_BQPMwu2He__sKhON4cRsu1ChQ
+
+> **Átirányított séta**: Ha a felhasználót a valóságban nagy területen követik (pl.: legalább 30x30 méteres négyzet alakú területen) akkor "át lehet verni" azzal, hogy azt hiszi, hogy kilómétereket sétál előre, miközben csak körkörösen mozog. (Bizonyított tény, hogy az ember nagy távolságot nem tud egyenesen sétálni vizuális jelek nélkül.) Itt probléma lehet, hogyha a felhasználó mondjuk jobbra akar menni hirtelen, és így kimenne a megfigyelési zónából.
+
+----------------------
+
+> **Mozgás megvalósítása**:
