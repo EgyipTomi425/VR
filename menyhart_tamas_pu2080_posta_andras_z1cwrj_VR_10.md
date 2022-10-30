@@ -2,7 +2,7 @@
 ### Virtual Reality: Témakör 10: Interaction (kölcsönhatások)
 -----------------------------------
 
-Itt az ember kölcsönhatásairól a virtuális valóságban, gépi tanulásról, remappingról, mozgásokról, virtuális tér manipulálásáról és a szociális interakciókról lesz szó.
+Itt az ember kölcsönhatásairól a virtuális valóságban, motoros képességekről, gépi tanulásról, remappingról, mozgásokról, virtuális tér manipulálásáról és a szociális interakciókról lesz szó.
 
 > Források:
 
@@ -41,10 +41,10 @@ Fontos feladataink a virtuális valóság használatához:
 - A térrel (pl.: tárgyakkal) való interakciók, manipulációk leírása
 - A felhasználók egymás közötti interakcióinak, kommunikációjának megoldása
 
-### 1. Motor programok és remapping
+### 1. Motoros képességek és remapping
 -------------------------------
 
-> **Motor program**: Életünk során fejlesztjük finommotorikus készségeinket számos konkrét feladat elvégzéséhez, mint például szövegírás, cipőfűző kötözés, labdadobás, és biciklizés. Ezeket gyakran motoros programoknak (gépi tanulásnak) nevezik, és megtanulják ismétlődő próbák révén, a pontosság és a könnyűség fokozatos javulásával, ahogy az elvégzett gyakorlatok száma nő. Végül előállítjuk a mozgásokat anélkül, hogy figyelni is kelljen rájuk. Például a legtöbb ember tud autót vezetni figyelmen kívül hagyva a kormánykerék, a fékek bizonyos műveleteit.
+> **Motoros képességek**: Életünk során fejlesztjük finommotorikus készségeinket számos konkrét feladat elvégzéséhez, mint például szövegírás, cipőfűző kötözés, labdadobás, és biciklizés. Ezeket gyakran motoros kéépességeknek (számítógép esetén gépi tanulásnak) nevezik, és megtanulják ismétlődő próbák révén, a pontosság és a könnyűség fokozatos javulásával, ahogy az elvégzett gyakorlatok száma nő. Végül előállítjuk a mozgásokat anélkül, hogy figyelni is kelljen rájuk. Például a legtöbb ember tud autót vezetni figyelmen kívül hagyva a kormánykerék, a fékek bizonyos műveleteit.
 
 Ezzel a módszerrel mi is megtanultuk pl.: kezelni a számítógépen található interfészt. Próbálkozásokon keresztül az egér hasznalatát könnyen- és hamar el lehet sajátítani, míg a billentyűzeten való vakon gépelés megtanulása akár évekig tarthat.
 
@@ -54,7 +54,7 @@ Tervezési szempontok A VR interakciós mechanizmusainak fejlesztése során:
     - feladat elvégzésének gyorsaságában
     - pontosságában
     - mozgási tartomány meghatározásában (opcionális)
-2. Az új motoros programok elsajátításának nehézségei
+2. Az új motoros képességek elsajátításának nehézségei
     - ideális esetben a felhasználónak nem kellene sok hónapot tölteni egy új mechanizmus elsajátításával.
 3. Könnyű használhatóság a kognitív terhelés szempontjából
     - az interakciós mechanizmusnak kevés vagy egyáltalán nem kell koncentrált figyelmet igényelnie némi gyakorlás után.
@@ -68,3 +68,18 @@ Az agy a mozgás megvalósításához elektromos inpulzusokat küld az izmokba, 
 (a) Az agykéreg egy része a mozgásnak van szentelve.
 
 (b) Sok más részek kölcsönhatásba lépnek a kéreggel, hogy mozgásokat hozzanak létre és hajtsanak végre, beleértve a talamusz, a gerincvelő, a bazális ganglion, az agytörzs és a kisagy.
+
+> **A mozgás neurofiziológiája**: először is vegyük figyelembe az akaratlagos mozgások (harántcsikolt izomszövet hajtja végre a mozgásokat) tanulásában, irányításában és végrehajtásában részt vevő idegi részt az (a) ábrán. Az elsődleges motoros kéreg a mozgást szabályozó idegi jelek fő forrása, míg a premotoros kéreg és a kiegészítő motoros terület érintett a mozgás előkészítésében és tervezésében. A kommunikáció neutrális jeleken keresztül megy végbe, ahogy azt a (b) ábra mutatja. A kisagy egy speciális feldolgozó egység, amely többnyire a mozgásnak van szentelve, de más funkciókat is betölt.
+
+A **kisagy** egy feldolgozó egység, ami:
+-------------
+-  101 milliárd neuront tartalmaz, ami jóval több, mint a teljes agykéreg, amely 20 milliárdot
+- a mozgást, koordinációs kézségeket, precíz,- finom mozgásokat segíti, teszi lehetővé
+- részt vesz a figyelem megtartásában, nyelvben és a beszédben
+- a motoros képességek tárolási központja
+- széles körű megfigyelések szerint károsodás esetén romlik a:
+    - finommotoros kontroll
+    - új motoros képességek tanulása
+- felhasználása a VR számára a szenzomotoros kapcsolatok tanulása (pl.: szem kéz koordináció).
+
+sss
