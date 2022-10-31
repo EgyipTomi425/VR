@@ -188,9 +188,34 @@ Látható, hogy a második esetben végtelen gyorsulással haladunk előre. ezá
 A képen egy virtuális „lézermutató” látható, amely egy parabolaívet követ, így a teleportálás célpontja könnyen megadható pontként a padlón.
 
 A teleportációs mechanizmus csökkenti az átvitelt, és ezáltal a VR-betegséget;
- - ára viszont, hogy csökken a tájékozódási képességünk
- - fontos, hogy ne változzon közben a nézőpont orientációja
+- ára viszont, hogy csökken a tájékozódási képességünk
+- fontos, hogy ne változzon közben a nézőpont orientációja
 
 > **Útkeresés**: A térbeli reprezentáció elsajátításának és navigálásra való felhasználásának kognitív problémáját útkeresésnek nevezzük. Vajon az agyunk tárolná az információt a helyekről, ahol járunk, ha tudnánk teleportálni? Széles körben megfigyelhetjük ezt a jelenséget az emberek körében akik navigálni egy városban már csak GPS- vagy taxiszolgáltatások segítségével tudnak, ahelyett, hogy használva a fejüket, hazatalálnának.
 
 ### 3. Manipuláció:
+
+Számos okból kölcsönhatásba lépünk a való világ tárgyaival:
+- ehetünk egy levest kanál segítségével
+- eldobhatunk egy labdát
+- leülhetünk egy székre, amit mozgathatunk
+- felvehetünk egy nadrágot
+
+A tárgyak változatossága magában foglalja a méretet, a súlyt, a súrlódást,
+rugalmasságot, hőmérsékletet, törékenységet stb.Ennek elsajátítása hosszú evulúció eredménye, amit pl.: egy robotnak megtanítani gépi tanulással hosszú és frusztráló munka lenne korlátozott sikerekkel.
+
+Kihasználva a remapping tulajdonságát a VR-nak, nem kell a manipuláció fizikájának teljesen eleget tenni a valóságban.  Ehelyett előnyösebb ilyen műveleteket végezni mint egy tárgy kiválasztása, megragadása, manipulálása, hordozása és elhelyezése, amilyen gyorsan és könnyen az megvalósítható.
+
+Kerülendő:
+- hosszú nyújtások
+- izomfeszülés
+- gorilla karok efektus (amikor hosszabb távon csak tartjuk vízszintesen a kezünket kinyújtva)
+
+Kivéve, ha a VR élmény maximális fokozása a cél vagy testnevelési gyakorlatokra tervezték.
+
+![Gorilla karok](./media/kep9.png)
+
+Tom Cruise holografikus kijelzőn mozgatja az ablakokat a 2002-es Minority Report című filmben. Ez egy nagyszerű interakciós mechanizmus Hollywoodból származik, de a valóságban borzasztóan fárasztó. A felhasználó gyorsan megtapasztalná
+gorilla karok efektust, mert csak vízszintesen tartja a karját, és beütnek olyan dolgok, mint a forgatónyomaték (M = N * k (erő * erőkar)) + a karunk saját súlya. Ki tudná fáradság érzete nélkül maga előtt tartani a karját hosszú időn keresztül? (Haladók próbálhatják súllyal is.)
+
+> **Szelekció**:  Az egyik legegyszerűbb módja egy objektum kiválasztásának a VR-ban a virtuális lézermutatóval való rámutatás, akárcsak a teleportálásnál. A felhasználó ehelyett tarthat egy zseblámpát is a kezében ehelyett. Az 5. fejezetben sok lehetőség fel van sorolva. A virtuális lézer segítségével a felhasználó egyszerűen megvilágítja a kívánt tárgyat, és megnyomva egy gombot, megragathatja, eldobhatja, manipulálhatja, eltárolhatja stb. Egy ajtó kinyitása esetén pl.: korlátozhatjuk a virtuális lézer bevetési távolságát, hogy csak közelről tudjuk azt kinyitni, hogy ezt ne a szoba túloldaláról tegyük meg, mert ez rontja a VR-élményt. 
