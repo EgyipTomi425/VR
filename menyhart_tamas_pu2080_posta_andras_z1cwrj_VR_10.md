@@ -231,4 +231,9 @@ Itt láthatjuk, hogy a felhasználó rendelkezik egy vonzási környezettel, ez�
 
 ![minecraft](./media/kep11.png)
 
-> **Elhelyezés**: Most fontoljuk meg azt, hogy elhelyezünk egy tárgyat a virtuális térben. Ez legegyszerűbben egy gomb megnyomásával történik, de megtörténhet pl.: egy zónába való belépéskor is automatikusan (hasonlóan a tárgyfelvételnél, nem a Neptunosnál). Az elhelyezés lehet pontos vagy korrigált (ha a tárgynak konkrét helye van, akkor elég csak a közelébe megpróbálni letenni, akkor a várt helyre fog kerülni az objektum).
+> **Elhelyezés**: Most fontoljuk meg azt, hogy elhelyezünk egy tárgyat a virtuális térben. Ez legegyszerűbben egy gomb megnyomásával történik, de megtörténhet pl.: egy zónába való belépéskor is automatikusan (hasonlóan a tárgyfelvételnél, nem a Neptunosnál). Az elhelyezés lehet pontos/precíz vagy korrigált (ha a tárgynak konkrét helye van, akkor elég csak a közelébe megpróbálni letenni, akkor a várt helyre fog kerülni az objektum). Erre megint tökéletes példa erre és a remapping fogalomra a Minecraft, amiben, ha leteszünk egy építőkockát, akkor az automatikusan a helyére ugrik, nem pontosan oda, ahová kattintunk, így szép szabályos elrendezés alakul ki. Egy orvosos szimulációnál megkövetelhetjük a precíz elhelyezést, de az emberi kéz és még az eszközeink sem fognak garantálni soha 100%-os pontosságot.
+
+A manipulációs módszerek fejlesztése mái napig az egyik legnagyobb kihívást jelenti a VR fejlesztésében.
+
+### 4. Szociális interakciók
+----------------------------
