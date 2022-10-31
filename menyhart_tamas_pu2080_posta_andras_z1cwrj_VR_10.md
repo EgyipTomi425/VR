@@ -321,4 +321,25 @@ Ez a fejezet az interakciós mechanizmusok három családját fedte le:
 - manipulációt
 - szociális mechanizmusokat
 
-Ezek a családok több évtizedes kutatás és fejlesztés eredményeként jöttek létre, de nem fedik le teljesen az interakció minden fajtáját
+Ezek a családok több évtizedes kutatás és fejlesztés eredményeként jöttek létre, de nem fedik le teljesen az interakció minden fajtáját. Sok rendszer olyan egyedi interakciós mechanizmust igényel, amely nem tartozik a három családba. Továbbá, az olcsó VR-rendszerek jelenlegi széles körben elterjedt használatával arra számítunk, hogy új családok fognak megjelenni. Itt mutatunk be néhány példát más interakciós mechanizmusokra és a kapcsolódó kihívásokra.
+
+![steam](./media/kep20.png)
+
+Így néz ki a Valve Steam webáruház, ha a HTC Vive készüléken nézi az illető.
+
+> **Interakció az információval és a médiával**: Az internet tartalmát lehet
+az univerzális szimulációs elvet követve számos módon bevezetni a VR-ba Elképzelhetünk például virtuális moziban lévő mozivásznat, ahol egyszerű kézmozdulatokkal szüneteltethetjük a filmet vagy hangerőt állíthatunk. Bonyolultabb példa a Steam áruház, ahol kézmozdulatokkal negvehetünk egy játékot vagy megnézhetünk egy bemutatót. Megoldásként egy virtuális képernyő lebeghet közvetlenül a felhasználó előtt, míg egy stabil, ismerős háttér biztosított.
+
+-----------------------
+
+> **Szövegbevitel és szerkesztés**: Kézmozdulatok segítségével szerkeszhetünk szöveget egy virtuális billentyűzet segítségével, ami a szemünk előtt lebeg, mint a filmekben.
+
+--------------------------------------
+
+> **3D tervezés és virtualizáció**: Létrehozhatunk egy olyan virtuális teret, ahol a fizika törvényei közel azonosak a valóságban lévőkkel, így mérnökök tervezhetnek 3D-ben házat, templomot, utakat, hidakat bármit, amit be is járhatnak, ha a munkájuk elkészült, és a stabilitását is ellenőrizhetik vele. Készíthetnek csavarokat, orvosi eszközöket, tesztelhetik VR segítségével. Ennek a jövőben nagy haszna lehet a papírral-ceruzával való tervezéssel szemben.
+
+![3Dhid](./media/kep21.png)
+
+Itt egy 3 dimenzióban megtervezett híd látható.
+
+###### Forrás: https://imgs.search.brave.com/Pk9_HzQPmEyVAzJ_cLTiejAcFFr8ZVfbdK_VUtf9Mrw/rs:fit:1200:1080:1/g:ce/aHR0cHM6Ly9pbWct/bmV3LmNndHJhZGVy/LmNvbS9pdGVtcy8z/OTMzNi92ZW5pY2Vf/YnJpZGdlXzNkX21v/ZGVsXzNkc19mYnhf/ZHhmX29ial9ibGVu/ZF9zdGxfM2I2ZDY3/MDYtY2M2Yy00NmY3/LTgyN2YtYmNhZjIx/NWVlZGMyLmpwZw
