@@ -302,6 +302,7 @@ Itt azt láthatjuk, hogy a karakterünket akár nagyon aprólékosan megszerkezt
 Itt látható a "végeredmény" a VRChatben, hogy az emberek a saját avatárukkal vannak egy virtuális ebédlőben. Mivel nehéz lenne megkülönböztetni őket, ezért van felettük egy név is írva.
 
 ### 4.3 Speciális kommunikáció
+----------------------------
 
 A legtöbb kommunikációs formát már megszokhattuk és megtanulhattuk nyelvtan órán, de a VR segítségével, ha a térben távol vagyunk egymástól, megvalósulhat egy olyan kommunikációs forma (egy embert szavait rendeljük csak néhányhoz a sok közül; anycast), amikor úgymond társaságban vagyunk a virtuális térben, de amit mondunk, azt onnan csak egy vagy néhány ember hallja. Ezt úgy lehet elképzelni a valóságban, mintha suttognánk azzal a különbséggel, hogy itt nincs annak a veszélye, hogy illetlennek gondolnak minket. Ezt talán úgy lehet elképzelni, hogy mondjuk van egy osztály, aki a teamspeak 3 alkalmazáson keresztül beszélget, de ezek közül 2 ember külön felhívja egymást discordon. Amit discordon mondanak egymásnak, azt a teamspeaken nem fogják hallani a többiek, hiába vannak egy (virtuális) helyen mind egyszerre, mert külön csatornát alakítottak ki egymás között.
 
@@ -312,3 +313,6 @@ Amit discoron mondanak ketten, azt nem hallják ts-en, hiába vannak egy közös
 ![tanárkommunikáció](./media/kep19.png)
 
 Másik példa lehet, ha elképzelünk egy virtuális tantermet, a tanár kioszt néhány önálló feladatot, akkor tud segíteni a diákoknak egyesével, anélkül, hogy a többieket zavarnák, mert hiába vannak 1 teremben, a tanár ki tud alakítani egy másik kommunikációs csatornát a diákkal.
+
+## 5. További interakciós mechanizmusok
+-----------------------------------
