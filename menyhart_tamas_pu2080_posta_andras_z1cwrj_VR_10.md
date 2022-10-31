@@ -315,4 +315,10 @@ Amit discoron mondanak ketten, azt nem hallják ts-en, hiába vannak egy közös
 Másik példa lehet, ha elképzelünk egy virtuális tantermet, a tanár kioszt néhány önálló feladatot, akkor tud segíteni a diákoknak egyesével, anélkül, hogy a többieket zavarnák, mert hiába vannak 1 teremben, a tanár ki tud alakítani egy másik kommunikációs csatornát a diákkal.
 
 ## 5. További interakciós mechanizmusok
------------------------------------
+
+Ez a fejezet az interakciós mechanizmusok három családját fedte le:
+- mozgást
+- manipulációt
+- szociális mechanizmusokat
+
+Ezek a családok több évtizedes kutatás és fejlesztés eredményeként jöttek létre, de nem fedik le teljesen az interakció minden fajtáját
