@@ -134,10 +134,12 @@ Rendelkezésre álló hely függvényében a lekövetések az alábbiak lehetnek
 - Félpasszív, amikor a felhasználó a headsettel a fején ül, mozgását lekövetik
   - Ilyenkor nyomon követik, hogy az illető éppen milyen irányba néz
   - Ha forgószék van az illetőnek, akkor a törzs mozgását is szimulálhatják vele (lengési irány)
+    - Mivel egy széken mondjuk 60-60 fokban tudunk forogni, így "átverhetjük" a felhasználót, hogy hatszor nagyobb mértékben fordul el a virtuális valóságban, így meg tehet teljes kört (anélkül, hogy egy vezetékes füles körbetekerné).
   - Itt használhat kontrollert, billentyűzetet stb. és pl.: kiváltja a fejével az egér mozgását
     - Egy példa, amikor a TheVR Outlastot játszott Oculus Rift segítségével
 - Passzív, amikor még a fej mozgását se követik le, de a headset az illető fején van.
-  - Gyakori például lövöldözés játékoknál.
+  - Egyes felhasználóknak émelyító lehet forogni, így néha jobban szeretnek gombokkal
+  - Gyakori például lövöldözős játékoknál
 
 TheVR Pisti Outlastot játszik Oculus Rift segítségével. (Ez nem lövöldözős játék.) Amerre éppen elnéz, abba az irányba néz a karaktere, így nincs szüksége egérre (vagy csak minimálisan).
 
@@ -149,4 +151,46 @@ TheVR Pisti Outlastot játszik Oculus Rift segítségével. (Ez nem lövöldöz�
 
 ----------------------
 
-> **Mozgás megvalósítása**:
+A VR viszont betegségek kialakulásához is vezethet, ezek általában vektor alapú VR betegségek (többnyire a koordinációs képességek elvesztése). Ennek az elkerülésére az alábbiakat tehetjük:
+1. Látószög növelése (a felhasználó ne csak azt lássa, ami pont előtte van, hanem jobbra, balra is még legalább 60-60 fokban.)
+2. Ne legyen túl közel a nézőpont a talajhoz, mert torzíthatja a sebesség -és gyorsulásérzetet.
+3. Meglepő módon előnyösebb lehet több kisebb eltérésre hosszú időn keresztül, mint egy rövid ideig tartó nagyobb eltérés (pl.: kisebb szöget kell fordulni a székben, mint a virtuális térben jobb, mintha csak hirtelen a semmiből a virtuális tér teljesen elfordulna egy másik irányba). (Lásd: lenti ábra.)
+4. Elsimítás efekt növelése, hogy pl.: lépcsőn való mozgás közben a lábunkra koncentrálva ne vegyük észre a megjelenő csíkokat.
+5. A kontraszt,- élesség csökkentése, világ homályosabbá tétele, míg hirtelen változásokat eszközölünk, segíthet.
+6. Egyéb érzékszervi behatások a hitelesség növelése érdekében hasznosak lehetnek, pl.: fújó szél, rezgő talaj, meleg, hideg, illatok, más mechanikai hatások pl.: érintés
+7. Ha a világnak kellene mozognia, nem pedig a felhasználónak, akkor csinálja azt
+jelzések vagy speciális utasítások segítségével (pl.: gomb megnyomása).
+8. Speciális feladatok ellátása, például lézerrel való kilövés repülő rovarokra nyújthat segítséget elterelni a figyelmet a vesztibuláris konfliktusról. Ha a felhasználó inkább összpontosít és teljesen mozgásban van, akkor gyorsabban megbetegszik.
+9. A vektoráció káros hatásai az ismételt gyakorlással csökkenhetnek. Azok az emberek, akik rendszeresen játszanak FPS-játékokat nagy képernyő előtt, már úgy tűnik, csökkent érzékenységük a vektorral szemben a VR-ban. Lehet, hogy nem bölcs stratégia a reménykedő vállalatok számára, hogy a felhasználóknak megköveteljék a gyakorlást az új termékek bemutatására. Képzeljük el, hogy kipróbálunk valami új ételt, amitől émelygés alakul ki az első 20 étkezés után, de aztán fokozatosan megszűnne az émelygés (egyre több étkezéssel). Ki próbálkozna tovább?
+
+Utolsó javaslat, hogy lehetőség szerint kerüljük a mozgást! Próbáljon meg olyan élményeket kialakítani, amelyek nem függenek tőle kritikusan.
+
+![grafikonok](./media/kep6.png)
+
+Látható, hogy a második esetben végtelen gyorsulással haladunk előre. ezárt a sebesség-idő grafikonon szakadás van, így az út idő grafikonon is, mintha teleportálnánk. Egyébkénta könyv ábra el volt rontva, mert:
+- a=Δv/Δt --> Δv=a*Δt --> a-nak t szerinti integráltja v.
+- Ha mondjuk az (a) ábrán a konstans, vegyük y = a = 1-nek, akkor az integráltja a*t. (egy egyenes) a középső bal ábrán.
+- Mivel v=Δs/Δt --> s=v*Δt --> v-nek t szerinti integráltja s.
+- Ha a sebesség-idő grafikon egy y = a * t egyenes, akkor az integrátja 1/2 * a * t^2 (egy parabola a bal fenti ábrán).
+- A fenti képletet átírva megkaphatjuk a jól ismert s = a/2 * t^2 képletet, és bebizonyítottuk, hogy ha a gyorsulás állandó, akkor érvényes a négyzetes úttörvény (a megtett távolság az idő négyzetével arányos). Az eredeti ábra akkor lett volna helyes, ha sqrt(t) szerepelt volna t helyett, akkor már lehetett volna egy egyenes az út-sqrt(idő) grafikon.
+- Amúgy ez kicsit hajaz a CS:GO-s példára is, azzal a különbséggel, hogy ott meg is állt egy végtelen lassulás következtében.
+
+![bicikli>](./media/kep7.png)
+
+> **Speciális hardver / eszköz**: A mozgás támogatására sok eszközt fejlesztettek ki (klasszikus billentyűzeten és egéren túl pl.: kontrollerek). Az egyik legrégebbi példa egy teljes pilótafülke létrehozása repülőgépes szimulációhoz. A lenti ábra egy mindenirányú futópadot mutat, amely bármilyen irányban és bármilyen távolságon keresztül lehetővé teszi a gyaloglást. Egy másik példában használhatunk szobabiciklit is, ahol azt szimuláljuk, hogy egy városban biciklizünk.
+
+--------------
+
+> **Teleportáció**: Az eddigi helyváltoztatási módszerek követték az univerzális szimulációs elvet, próbálkoztunk reprodukálni a valóságot, de mivel a VR-ban a fizika törvényei nem (feltétlen) érvényesek, így változtathatunk helyet valószínűtlen módon is, legelterjettebb módszer a teleportáció, amit szerintem nem kell bemutatni. Ennek a megvalósítása általában valami vezérlővel (pl.: kontrollerrel, egy mezőbe való belépéskor) történik. Van, hogy a felhasználó egy lézert tart a kezében, és amire rámutat vele, oda fog teleportálni egy gombnyomás után.
+
+![lézer](./media/kep8.png)
+
+A képen egy virtuális „lézermutató” látható, amely egy parabolaívet követ, így a teleportálás célpontja könnyen megadható pontként a padlón.
+
+A teleportációs mechanizmus csökkenti az átvitelt, és ezáltal a VR-betegséget;
+ - ára viszont, hogy csökken a tájékozódási képességünk
+ - fontos, hogy ne változzon közben a nézőpont orientációja
+
+> **Útkeresés**: A térbeli reprezentáció elsajátításának és navigálásra való felhasználásának kognitív problémáját útkeresésnek nevezzük. Vajon az agyunk tárolná az információt a helyekről, ahol járunk, ha tudnánk teleportálni? Széles körben megfigyelhetjük ezt a jelenséget az emberek körében akik navigálni egy városban már csak GPS- vagy taxiszolgáltatások segítségével tudnak, ahelyett, hogy használva a fejüket, hazatalálnának.
+
+### 3. Manipuláció:
